@@ -1,0 +1,108 @@
+.h1, h1 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 1rem 0;
+    margin: 0;
+    border: 0;
+}
+
+.form--login {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.form--login > fieldset > input[type="email"] {
+    width: 20em;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.logIn {
+    margin-left: 25px;
+    padding-right: 10%;
+    
+}
+
+.label--login {
+    width: 8rem;
+    display: inline-block;
+}
+
+.emailAdd{
+    font-size: large;
+}
+
+.form-control {
+    display: block;
+    width: 94%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: rgba(255, 255, 255, 0.516);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.container--login {
+    text-align: center;
+    background-color: wheat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,/Users/emeka/Downloads/blob.svg");
+}
+
+
+
+.form--login {
+    background-position-x: center;
+    z-index: 1;
+    min-height: 30rem;
+    min-width: 25rem;
+    background-color: rgba(234, 226, 226, 0.778);
+    box-shadow: 0 0 25px 0 rgba(45, 162, 191, 0.446);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.button--close {
+    position: relative;
+    bottom: -2rem;
+}
+
+body{
+    background-color: wheat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}

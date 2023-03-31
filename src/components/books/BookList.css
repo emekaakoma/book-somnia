@@ -1,0 +1,41 @@
+.book {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.233);
+    
+}
+
+.books {
+    background-color: rgba(231, 239, 242, 0.729);
+    border: 1px dotted rgb(139, 116, 0);
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    margin-left: 7%;
+    width: 200px;
+    border: 15px solid rgba(0, 128, 0, 0.479);
+    padding: 50px;
+    margin: 20px;
+    
+}
+
+.book__name{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.book__description{
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+.addBooks{
+    display: flex;
+    margin: auto;
+    background-color: rgba(165, 42, 42, 0.923);
+    color: white;
+    margin-left:80%;
+}

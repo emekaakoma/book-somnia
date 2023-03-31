@@ -1,0 +1,24 @@
+.session {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sessions {
+    background-color: rgba(232, 238, 240, 0.538);
+    border: 1px dotted rgb(139, 116, 0);
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    margin-left: 7%;
+    width: 200px;
+    border: 15px solid rgba(0, 128, 0, 0.555);
+    padding: 50px;
+    margin: 20px;
+}
+
+.bookSession{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.273);
+}
