@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { getCustomerDetails } from "../APIManager"
+import { getAllSymptoms, getCustomerDetails } from "../APIManager"
 
 export const CustomerDetails = () => {
     const { customerId } = useParams()
+    const [symptoms, setSymptoms] = useState([])
     const [customers, setCustomers] = useState([])
 
     useEffect(
@@ -15,6 +16,15 @@ export const CustomerDetails = () => {
         }
     )
 
+    useEffect(
+        () => {
+            getAllSymptoms()
+            .then((symptomArray) => {
+                setSymptoms(symptomArray)
+            })
+        },[]
+    )
+
     return <>
     <article className="customerDetails">
         {
@@ -23,8 +33,16 @@ export const CustomerDetails = () => {
                     <header value={customer.id}></header>
                     <div>Name: {customer?.user?.name}</div>
                     <div>Email: {customer?.user?.email}</div>
-                    <div>symptoms: {customer.symptoms}</div>
-                    <div>preference: {customer.preference}</div>
+                    <div>Symptom(s): {
+                        symptoms.map(
+                            (symptom) => {
+                                if (symptom.id === customer.symptoms){
+                                    return <span>{symptom.type}</span>
+                                }
+                            }
+                        )
+                        }</div>
+                    <div>Preference: {customer.preference}</div>
                     </section>
             })
         }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { getAllSessions, getCustomerSessions, getExactSession, updateSession } from "../APIManager"
+import "./CustomerList.css"
 
 export const EditSession = () => {
     const [sessions, setSessions] = useState({
@@ -36,11 +37,11 @@ export const EditSession = () => {
     }
 
     return <>
-        <form className="hiringForm">
-            <h2 className="hiringForm__title">Edit Session</h2>
+        <form className="bookSession">
+            <h2>Edit Session</h2>
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="name">Edit Description:</label>
+                    <label htmlFor="name" className="hourLetter">Edit Description:</label>
                     <input
                         required autoFocus
                         type="text"

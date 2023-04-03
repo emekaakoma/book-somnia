@@ -13,13 +13,48 @@
     text-align: center;
     margin-left: 7%;
     width: 200px;
-    border: 15px solid rgba(0, 128, 0, 0.555);
+    border: 10px solid rgba(0, 79, 128, 0.555);
     padding: 50px;
     margin: 20px;
 }
 
-.bookSession{
+.bookSession {
     width: 60%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.327);
+}
+
+.header {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.538);
+    width: 25%;
+    display: flex;
+    margin-left: 37%;
+}
+
+.hourLetter {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    margin-left: 37%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.selecter{
+    display: flex;
+    justify-content: center;
+    margin-left: 42%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submitSession{
+    border-radius: 8%;
 }

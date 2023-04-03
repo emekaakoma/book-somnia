@@ -94,7 +94,7 @@ export const SessionList = () => {
 
     const canClose = (session) => {
         if (bookUserObject.staff) {
-            return <button onClick={() => Close(session)}>Completed</button>
+            return <button onClick={() => Close(session)}>Complete</button>
         }
     }
 
@@ -118,12 +118,9 @@ export const SessionList = () => {
     }
 
     return <>
-        <h2>My Sessions</h2>
+        <h2 className="header">My Sessions</h2>
 
         <article className="session">
-            <div className={`${feedback.includes("Error") ? "error" : "feedback"} ${feedback === "" ? "invisible" : "visible"}`}>
-                {feedback}
-            </div>
             {
                 filteredSessions.map(
                     (session) => {
@@ -133,14 +130,15 @@ export const SessionList = () => {
                                     ? <></>
                                     : <div><img src={session.employee.image} width={"200"} height={"200"} /></div>
                             }
-                            <header>Book: {session?.book?.name}</header>
-                            <div>hours: {session.hours}</div>
+                            <header>Book:  
+                                 <Link to={'/books'}>{session?.book?.name}</Link></header>
+                            <div>Hours: {session.hours}</div>
                             <div> {
                                 bookUserObject.staff
                                 ? customers.map(
                                     (customer) => {
                                         if (customer.id === session.customerId) {
-                                            return <div>customer:
+                                            return <div>Customer:
                                                 <Link to={`/customers/${customer.id}`}>{customer?.user?.name}</Link>
                                             </div>
 
@@ -149,7 +147,7 @@ export const SessionList = () => {
                                 )
                                 : ""
                             }</div>
-                            <footer>description: {session.description}</footer>
+                            <footer>Description: {session.description}</footer>
                             <footer>
                                 {
                                     canEdit(session.id)

@@ -79,9 +79,9 @@ export const BookSession = () => {
         <form className="bookSession">
             <h2 className="bookSession__title">Lets Book A Session!</h2>
             <fieldset>
-                <div className="form-group">
-                    <label htmlFor="books">Employees:</label>
-                    <select
+                <div className="form-group-employees">
+                    <label htmlFor="books" className="hourLetter">Employees</label>
+                    <select className="selecter"
                         value={sessions.employeeId}
                         onChange={
                             (evt) => {
@@ -102,9 +102,9 @@ export const BookSession = () => {
                 </div>
             </fieldset>
             <fieldset>
-                <div className="form-group">
-                    <label htmlFor="books">Books:</label>
-                    <select
+                <div className="form-group-books">
+                    <label htmlFor="books" className="hourLetter">Books</label>
+                    <select className="select"
                         value={sessions.bookId}
                         onChange={
                             (evt) => {
@@ -125,8 +125,8 @@ export const BookSession = () => {
                 </div>
             </fieldset>
             <fieldset>
-                <div className="form-group">
-                    <label htmlFor="description">Describe your situation:</label>
+                <div className="form-group-describe">
+                    <label htmlFor="description" className="hourLetter">Describe your situation:</label>
                     <input
                         required autoFocus
                         type="text"
@@ -144,8 +144,8 @@ export const BookSession = () => {
                 </div>
             </fieldset>
             <fieldset>
-                <div className="form-group">
-                    <label htmlFor="name">How many hours:</label>
+                <div className="form-group-hours">
+                    <label htmlFor="name" className="hourLetter">How many hours?</label>
                     <input type="number"
                         className="form-control"
                         value={sessions.hours}
@@ -160,7 +160,7 @@ export const BookSession = () => {
             </fieldset>
             <button
                 onClick={(clickEvent) => handleSubmit(clickEvent)}
-                className="btn btn-primary">
+                className="submitSession">
                 Submit Form
             </button>
         </form>

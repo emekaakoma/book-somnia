@@ -29,7 +29,6 @@ export const EmployeeDetails = () => {
                     <div>Name: {employee?.user?.name}</div>
                     <div>Email: {employee?.user?.email}</div>
                     <div>Pay Rate: ${employee.payRate}/hour</div>
-                    <div>Experience: {employee.experience} years</div>
                     <div>About Me: {employee.bio}</div>
                     {
                         bookUserObject.staff

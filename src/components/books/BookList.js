@@ -34,7 +34,7 @@ export const BookList = () => {
     }
 
     return <>
-    <h2 className="bookHeader">List of Books</h2>
+    <h2 className="book-header">List of Books</h2>
         
         {
             bookUserObject.staff

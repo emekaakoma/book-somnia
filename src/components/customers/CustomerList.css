@@ -7,31 +7,29 @@
 
 .employees {
     background-color: rgba(231, 239, 242, 0.729);
-    border: 1px dotted rgb(139, 116, 0);
     padding: 0.7rem;
     margin: 0.5rem 0;
     text-align: center;
     margin-left: 7%;
     width: 200px;
-    border: 15px solid rgba(0, 128, 0, 0.479);
+    border: 10px solid rgba(0, 79, 128, 0.555);
     padding: 50px;
     margin: 20px;
 }
 
-.customerDetail{
+.customerDetails{
     display: flex;
     justify-content: center;
 }
 
 .customersDetail{
     background-color: rgba(231, 239, 242, 0.729);
-    border: 1px dotted rgb(139, 116, 0);
     padding: 0.7rem;
     margin: 0.5rem 0;
     text-align: center;
     margin-left: 7%;
     width: 200px;
-    border: 15px solid rgba(0, 128, 0, 0.479);
+    border: 10px solid rgba(0, 79, 128, 0.555);
     padding: 50px;
     margin: 20px;
     width: 50%;
@@ -41,5 +39,18 @@
 
 .customerHeader, .profileTitle{
     color: white;
+}
+
+.bookSession {
+    width: 60%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.327);
+}
+
+.hourLetter {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
 }
 
