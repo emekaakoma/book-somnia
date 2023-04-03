@@ -78,9 +78,9 @@ export const SessionList = () => {
             return <button onClick={() => {
                 deleteSession(sessionsId)
                     .then(() => {
-                        navigate("/books")
+                        navigate("/sessions")
                     })
-            }} className="sesison__delete">Delete</button>
+            }} className="session__delete">Delete</button>
         } else {
             return ""
         }
@@ -88,13 +88,13 @@ export const SessionList = () => {
 
     const canEdit = (session) => {
         if (!bookUserObject.staff) {
-            return <button onClick={() => navigate(`/sessions/${session}/edit`)}>Edit</button>
+            return <button className="editSession" onClick={() => navigate(`/sessions/${session}/edit`)}>Edit</button>
         }
     }
 
     const canClose = (session) => {
         if (bookUserObject.staff) {
-            return <button onClick={() => Close(session)}>Complete</button>
+            return <button className="completeCase" onClick={() => Close(session)}>Complete</button>
         }
     }
 
@@ -109,7 +109,6 @@ export const SessionList = () => {
         }
         updateSessionList(session, copy)
             .then(() => {
-                setFeedback("Customer profile successfully saved")
                 getSessionsAndBooks()
                     .then((sessionsArray) => {
                         setSessions(sessionsArray)
@@ -130,8 +129,22 @@ export const SessionList = () => {
                                     ? <></>
                                     : <div><img src={session.employee.image} width={"200"} height={"200"} /></div>
                             }
+                            <div>{
+                                bookUserObject.staff
+                                ? ""
+                                : 
+                                    employees.map(
+                                        (employee) => {
+                                            if(employee.id === session.employeeId){
+                                            return <span>Employee: 
+                                                <Link className="employeeLink" to={`/employees/${employee.id}`}>{employee?.user?.name}</Link>
+                                                </span>
+                                            }
+                                        }
+                                    )
+                            }</div>
                             <header>Book:  
-                                 <Link to={'/books'}>{session?.book?.name}</Link></header>
+                                 <Link className="bookLink" to={'/books'}>{session?.book?.name}</Link></header>
                             <div>Hours: {session.hours}</div>
                             <div> {
                                 bookUserObject.staff
@@ -139,7 +152,7 @@ export const SessionList = () => {
                                     (customer) => {
                                         if (customer.id === session.customerId) {
                                             return <div>Customer:
-                                                <Link to={`/customers/${customer.id}`}>{customer?.user?.name}</Link>
+                                                <Link className="customerLink" to={`/customers/${customer.id}`}>{customer?.user?.name}</Link>
                                             </div>
 
                                         }
@@ -159,7 +172,7 @@ export const SessionList = () => {
                                     session.dateCompleted === ""
 
                                         ? canClose(session)
-                                        : <button>Good Readings!</button>
+                                        : <button className="completed">Good Readings!</button>
 
                                 }
                             </footer>

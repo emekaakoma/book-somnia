@@ -3,11 +3,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 80%;
+    margin: auto;
 }
 
 .sessions {
-    background-color: rgba(232, 238, 240, 0.538);
-    border: 1px dotted rgb(139, 116, 0);
+    background-color: rgba(0, 0, 0, 0.538);
     padding: 0.7rem;
     margin: 0.5rem 0;
     text-align: center;
@@ -16,12 +17,23 @@
     border: 10px solid rgba(0, 79, 128, 0.555);
     padding: 50px;
     margin: 20px;
+    box-shadow: 10px 10px 10px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .bookSession {
     width: 60%;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.327);
+    background-color: rgba(0, 0, 0, 0.538);
+    color: white;
+    border: 10px solid rgba(0, 79, 128, 0.555);
+    box-shadow: 10px 10px 10px black;
+}
+.bookSession__title{
+    text-align: center;
 }
 
 .header {
@@ -55,6 +67,19 @@
     text-align: center;
 }
 
-.submitSession{
-    border-radius: 8%;
+.completeCase, .completed, .editSession, .session__delete, .submitSession{
+    background-color: rgb(233, 233, 233);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px black;
+    color: black;
+}
+
+.bookLink, .customerLink, .employeeLink{
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.558);
+    box-shadow: 5px 5px 5px black;
 }

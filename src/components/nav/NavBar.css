@@ -3,7 +3,6 @@
     flex-wrap: nowrap;
     justify-content: left;
     float: right;
-    background-color: beige;
     margin-top: 30px;
     position: relative;
     height: 45px;
@@ -13,16 +12,29 @@
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: rgba(27, 64, 119, 0.225);
+    background-color: rgba(226, 231, 237, 0.268);
+    text-align: center;
 }
 
 .navbar__item {
     flex-basis: 20%;
     list-style-type: none;
+    font-style: normal;
+    text-decoration: none;
     
 }
 
 .navbar__logout {
     margin-left: auto;
+}
+
+.navbar__link{
+    background-color: rgb(233, 233, 233);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px black;
+    color: black;
 }
 

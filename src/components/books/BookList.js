@@ -49,8 +49,8 @@ export const BookList = () => {
                         return <section className="books">
                             <header value={book.id}><img src={book.image} alt={book.name} width={"200"} height={"200"} /></header>
                             <div className="book__name">{book.name}</div>
-                            <div><span className="book__description">Description: </span>{book.description}</div>
-                            <footer className="book__delete">
+                            <div className="describing"><span className="book__description">Description: </span>{book.description}</div>
+                            <footer>
                                 {deleteButton(book.id)}
                             </footer>
                         </section>

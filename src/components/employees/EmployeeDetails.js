@@ -29,11 +29,11 @@ export const EmployeeDetails = () => {
                     <div>Name: {employee?.user?.name}</div>
                     <div>Email: {employee?.user?.email}</div>
                     <div>Pay Rate: ${employee.payRate}/hour</div>
-                    <div>About Me: {employee.bio}</div>
+                    <div className="aboutMe">About Me: {employee.bio}</div>
                     {
                         bookUserObject.staff
                             ? ""
-                            : <button onClick={() => navigate("/booking")}>Book Now</button>
+                            : <button className="bookNow" onClick={() => navigate("/booking")}>Book Now</button>
                     }
                 </section>
             })

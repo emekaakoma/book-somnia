@@ -42,7 +42,7 @@ export const BookForm = () => {
             <h2 className="hiringForm__title">Add New Book</h2>
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="name">Book Name:</label>
+                    <label htmlFor="name" className="hourLetter">Book Name:</label>
                     <input
                         required autoFocus
                         type="text"
@@ -61,7 +61,7 @@ export const BookForm = () => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="name">Description:</label>
+                    <label htmlFor="name" className="hourLetter">Description:</label>
                     <input
                         required autoFocus
                         type="text"
@@ -80,7 +80,7 @@ export const BookForm = () => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="bookImage">Image:</label>
+                    <label htmlFor="bookImage" className="hourLetter">Image:</label>
                     <input
                         required autoFocus
                         type="text"
@@ -99,7 +99,7 @@ export const BookForm = () => {
             </fieldset>
             <button
                 onClick={(clickEvent) => handleSubmit(clickEvent)}
-                className="btn btn-primary">
+                className="addingBooks">
                 Add Book
             </button>
         </form>

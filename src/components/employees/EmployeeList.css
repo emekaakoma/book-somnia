@@ -6,16 +6,17 @@
 }
 
 .employees {
-    background-color: rgba(231, 239, 242, 0.729);
-    border: 1px dotted rgb(139, 116, 0);
+    background-color: rgba(0, 0, 0, 0.538);
     padding: 0.7rem;
     margin: 0.5rem 0;
     text-align: center;
     margin-left: 7%;
-    width: 200px;
+    width: 25%;
     border: 10px solid rgba(0, 79, 128, 0.555);
     padding: 50px;
     margin: 20px;
+    box-shadow: 10px 10px 10px black;
+    color: white;
     
 }
 
@@ -27,8 +28,7 @@
 }
 
 .employeesDetail{
-    background-color: rgba(231, 239, 242, 0.729);
-    border: 1px dotted rgb(139, 116, 0);
+    background-color: rgba(0, 0, 0, 0.538);
     padding: 0.7rem;
     margin: 0.5rem 0;
     text-align: center;
@@ -37,13 +37,46 @@
     border: 10px solid rgba(0, 79, 128, 0.555);
     padding: 50px;
     margin: 20px;
-    width: 50%;
+    width: 20%;
     text-align: center;
-    
+    box-shadow: 10px 10px 10px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutMe{
+    height: 110px;
+    width: 160px;
+    overflow: auto;
+    scrollbar-base-color:gold;
+    padding-bottom:15px;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: fit-content;
 }
 
 .header{
     color: white;
     margin-right: 5%;
-    
+    border: 5px solid rgba(0, 79, 128, 0.555);
+    box-shadow: 5px 5px 5px black;
+}
+
+.employeeLink{
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.558);
+    box-shadow: 5px 5px 5px black;
+}
+
+.bookNow{
+    background-color: rgb(233, 233, 233);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px black;
+    color: black;
 }

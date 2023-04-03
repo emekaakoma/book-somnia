@@ -3,13 +3,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.233);
+    
 
 }
 
 .books {
-    background-color: rgba(231, 239, 242, 0.729);
-    border: 1px dotted rgb(139, 116, 0);
+    background-color: rgba(0, 0, 0, 0.538);
     padding: 0.7rem;
     margin: 0.5rem 0;
     text-align: center;
@@ -18,7 +17,10 @@
     border: 10px solid rgba(0, 79, 128, 0.555);
     padding: 50px;
     margin: 20px;
-
+    box-shadow: 20px 20px 20px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .book__name {
@@ -29,15 +31,33 @@
 .book__description {
     font-size: larger;
     font-weight: bolder;
+   
 
+}
+
+.describing{
+    height: 110px;
+    width: 160px;
+    overflow: auto;
+    scrollbar-base-color:gold;
+    padding-bottom:15px;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .addBooks {
     display: flex;
     margin: auto;
-    background-color: rgba(165, 42, 42, 0.923);
-    color: white;
+    background-color: rgba(42, 144, 165, 0.632);
     margin-left: 80%;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 20px 20px 20px black;
+    color: white;
 }
 
 .book-header {
@@ -47,6 +67,8 @@
     width: 25%;
     display: flex;
     margin-left: 37%;
+    border: 5px solid rgba(0, 79, 128, 0.555);
+    box-shadow: 5px 5px 5px black;
 }
 
 .form-control {
@@ -54,7 +76,42 @@
 }
 
 .bookForm {
-    width: 60%;
+    width: 50%;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.327);
+    box-shadow: 20px 20px 20px black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.538);
+    border: 10px solid rgba(0, 79, 128, 0.555);
+    
+}
+
+.hourLetter {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.book__delete{
+    background-color: rgb(233, 233, 233);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px black;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.addingBooks{
+    background-color: rgb(233, 233, 233);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px black;
+    color: black;
 }

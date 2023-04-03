@@ -57,7 +57,7 @@ export const EditSession = () => {
                     />
                 </div>
             </fieldset>
-            <button onClick={(clickEvent) => handleUpdate(clickEvent)}
+            <button className="updateSession" onClick={(clickEvent) => handleUpdate(clickEvent)}
             >Update</button>
         </form>
 

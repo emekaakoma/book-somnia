@@ -39,7 +39,7 @@ export const EmployeeList = () => {
                         return <section className="employees">
                             <header value={employee.id}><img src={employee.image} alt={employee.name} width={"200"} height={"200"} /></header>
                             <div className="employee__name">
-                                <Link to={`/employees/${employee.id}`}>{employee?.user?.name}</Link>
+                                <Link className="employeeLink" to={`/employees/${employee.id}`}>{employee?.user?.name}</Link>
                             </div>
                             <div className="employee__description">Rate: ${employee.payRate}/hour</div>
                             <div>Experience: {employee.experience} years</div>

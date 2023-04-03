@@ -71,7 +71,7 @@ export const BookSession = () => {
 
         submitSessionRequest(sessionsToSendToAPI)
         .then(() => {
-            navigate("/books")
+            navigate("/sessions")
         })
     }
 
