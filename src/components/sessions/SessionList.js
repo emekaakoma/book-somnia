@@ -94,7 +94,7 @@ export const SessionList = () => {
 
     const canClose = (session) => {
         if (bookUserObject.staff) {
-            return <button className="completeCase" onClick={() => Close(session)}>Complete</button>
+            return <button className="completeCase" onClick={() => Close(session)}>Mark As Completed</button>
         }
     }
 
