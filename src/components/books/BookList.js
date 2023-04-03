@@ -34,14 +34,15 @@ export const BookList = () => {
     }
 
     return <>
-
-        <h2>List of Books</h2>
+    <h2 className="bookHeader">List of Books</h2>
+        
         {
             bookUserObject.staff
                 ? <button onClick={() => navigate("/bookForm")} className="addBooks">Add Books</button>
                 : ""
         }
         <article className="book">
+        
             {
                 books.map(
                     (book) => {
@@ -49,7 +50,7 @@ export const BookList = () => {
                             <header value={book.id}><img src={book.image} alt={book.name} width={"200"} height={"200"} /></header>
                             <div className="book__name">{book.name}</div>
                             <div><span className="book__description">Description: </span>{book.description}</div>
-                            <footer>
+                            <footer className="book__delete">
                                 {deleteButton(book.id)}
                             </footer>
                         </section>

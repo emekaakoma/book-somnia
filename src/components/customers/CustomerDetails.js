@@ -16,10 +16,18 @@ export const CustomerDetails = () => {
     )
 
     return <>
+    <article className="customerDetails">
         {
             customers.map((customer) => {
-                return <div>Name: {customer?.user?.name}</div>
+                return <section className="customersDetail">
+                    <header value={customer.id}></header>
+                    <div>Name: {customer?.user?.name}</div>
+                    <div>Email: {customer?.user?.email}</div>
+                    <div>symptoms: {customer.symptoms}</div>
+                    <div>preference: {customer.preference}</div>
+                    </section>
             })
         }
-    </>
-}
+        </article>
+                </>
+            }

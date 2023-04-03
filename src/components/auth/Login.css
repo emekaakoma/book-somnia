@@ -65,16 +65,16 @@ fieldset {
 
 .container--login {
     text-align: center;
-    background-color: wheat;
+    background-color: white;
     height: 100vh;
     width: 100vw;
-    background-size: cover;
+    background-size: 50%;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml,/Users/emeka/Downloads/blob.svg");
+    background-repeat: repeat-x;
+    background-image: url("http://localhost:3000/blob.svg");
 }
 
 
@@ -98,11 +98,11 @@ fieldset {
 }
 
 body{
-    background-color: wheat;
+    background-color: white;
     height: 100vh;
     width: 100vw;
-    background-size: cover;
+    background-size: 45%;
     background-position: center;
-    background-repeat: no-repeat;
-    
+    background-repeat: repeat;
+    background-image: url("http://localhost:3000/blob.svg");
 }

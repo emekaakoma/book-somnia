@@ -17,7 +17,6 @@ export const CustomerViews = () => {
 			<Route path="/" element={
 				<>
 					<h1 className="bookHeader"><img className="booksomniaView" src={bookster} height="100" width={"100"} /></h1>
-					<div className="subtitle">Your solution to sleepless nights</div>
 
 					<Outlet />
 				</>

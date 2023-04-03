@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { addBooks, getAllBooks } from "../APIManager"
+import "./BookList.css"
 
 export const BookForm = () => {
     const [books, setBooks] = useState({
@@ -37,7 +38,7 @@ export const BookForm = () => {
     }
 
     return (
-        <form className="hiringForm">
+        <form className="bookForm">
             <h2 className="hiringForm__title">Add New Book</h2>
             <fieldset>
                 <div className="form-group">

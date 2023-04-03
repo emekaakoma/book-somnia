@@ -17,3 +17,29 @@
     padding: 50px;
     margin: 20px;
 }
+
+.customerDetail{
+    display: flex;
+    justify-content: center;
+}
+
+.customersDetail{
+    background-color: rgba(231, 239, 242, 0.729);
+    border: 1px dotted rgb(139, 116, 0);
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    margin-left: 7%;
+    width: 200px;
+    border: 15px solid rgba(0, 128, 0, 0.479);
+    padding: 50px;
+    margin: 20px;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.customerHeader, .profileTitle{
+    color: white;
+}
+

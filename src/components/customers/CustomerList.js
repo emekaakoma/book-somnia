@@ -21,7 +21,7 @@ export const CustomerList = () => {
 
     return <>
 
-        <h2>List of Cutsomers</h2>
+        <h2 className="customerHeader">List of Cutsomers</h2>
         {/* {
         bookUserObject.staff
         ? <button>Add employees</button>

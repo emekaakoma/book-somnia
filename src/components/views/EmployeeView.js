@@ -1,4 +1,4 @@
-import { Outlet, Route, Routes } from "react-router-dom"
+import { Navigate, Outlet, Route, Routes, useNavigate } from "react-router-dom"
 import { BookForm } from "../books/BookForm"
 import { BookList } from "../books/BookList"
 import { CustomerDetails } from "../customers/CustomerDetails"
@@ -10,13 +10,13 @@ import bookster from "../../images/bookster.svg"
 import "./Views.css"
 
 export const EmployeeViews = () => {
+	const navigate = useNavigate()
 	return <>
 		<Routes>
 
 			<Route path="/" element={
 				<>
-					<h1 className="bookHeader"><img className="booksomniaView" src={bookster} height="100" width={"100"} /></h1>
-					<div className="subtitle">Your solution to sleepless nights</div>
+					<h1 className="bookHeader"><img className="booksomniaView" src={bookster} height="100" width={"100"} onClick={() => {Navigate('/')}} /></h1>
 
 					<Outlet />
 				</>

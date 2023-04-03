@@ -136,7 +136,8 @@ export const SessionList = () => {
                             <header>Book: {session?.book?.name}</header>
                             <div>hours: {session.hours}</div>
                             <div> {
-                                customers.map(
+                                bookUserObject.staff
+                                ? customers.map(
                                     (customer) => {
                                         if (customer.id === session.customerId) {
                                             return <div>customer:
@@ -146,6 +147,7 @@ export const SessionList = () => {
                                         }
                                     }
                                 )
+                                : ""
                             }</div>
                             <footer>description: {session.description}</footer>
                             <footer>

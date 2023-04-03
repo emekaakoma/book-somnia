@@ -1,8 +1,12 @@
 .booksomniaView {
     display: flex;
-   margin-right: 50%;
+    margin-right: 50%;
 }
 
-.subtitle{
+.subtitle {
     text-align: center;
+    color: white;
+    font-size: larger;
+    text-shadow: 20%;
+    font-weight: 200;
 }

@@ -19,6 +19,7 @@
 }
 
 .bookSession{
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.273);
+    width: 60%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.327);
 }
