@@ -53,7 +53,7 @@ export const CreateProfile = () => {
     }  
 
     return (
-        <form className="hiringForm">
+        <form className="createProfile">
             <h2 className="profileTitle">BookSomnia Customer Profile</h2>
             <fieldset>
                 <div className="form-group">
@@ -65,7 +65,6 @@ export const CreateProfile = () => {
                         placeholder={customers.name}
                         value={customers.name}
                     />
-                    {customers.name}
                 </div>
             </fieldset>
             <fieldset>

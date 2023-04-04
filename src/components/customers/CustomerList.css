@@ -29,13 +29,17 @@
     margin: 0.5rem 0;
     text-align: center;
     margin-left: 7%;
-    width: 200px;
+    width: auto;
     border: 10px solid rgba(0, 79, 128, 0.555);
     padding: 50px;
     margin: 20px;
     width: 50%;
     text-align: center;
     box-shadow: 5px 5px 5px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 
@@ -67,3 +71,15 @@
     color: black;
 }
 
+.createProfile{
+    width: 50%;
+    margin: auto;
+    box-shadow: 20px 20px 20px black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.538);
+    border: 10px solid rgba(0, 79, 128, 0.555);
+}
+
+.name{
+    text-align: center;
+}
